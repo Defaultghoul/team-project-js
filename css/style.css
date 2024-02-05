@@ -1,0 +1,19 @@
+@import url(./font.css);
+@import url(./reset.css);
+@import url(./header.css);
+@import url(./main.css);
+@import url(./footer.css);
+@import url(./modalStart.css);
+@import url(./dino.css);
+
+/* tasks */
+@import url(./tasks/highest-num.css);
+@import url(./tasks/slider.css);
+@import url(./tasks/calculator.css);
+@import url(./tasks/time-calculator.css);
+@import url(./tasks/dino.css);
+@import url(./tasks/scientists.css);
+@import url(./tasks/leap-year.css);
+@import url(./tasks/random-num.css);
+@import url(./tasks/stone-scissors-paper.css);
+@import url(./tasks/football.css)

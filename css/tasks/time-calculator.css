@@ -1,0 +1,37 @@
+.time {
+	width: 392px;
+	height: 35px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.time-result {
+	color: #000;
+	font-family: 'Montserrat Alternates';
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.time svg {
+	margin-left: 33px;
+	margin-right: 33px;
+}
+
+
+.time .fa-search {
+	top: 0px;
+	right: 34px;
+	position: relative;
+	width: 56px;
+	height: 35px;
+	border-radius: 0px 20px 20px 0px;
+	background: url(../../img/icon/icon-search.png) no-repeat;
+	border: none;
+}
+
+.task-5 {
+	margin-top: 36px;
+}

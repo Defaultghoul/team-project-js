@@ -1,0 +1,128 @@
+[dark] {
+	.container {
+		background-color: rgb(17, 17, 17);
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p,
+	li,
+	.calculator .tex {
+		color: white;
+	}
+
+	.operationsCalc button,
+	.resultCalc {
+		background-color: #fff;
+		color: black;
+		border: none;
+		box-shadow: 3px 3px 0px 0px rgba(156, 156, 156, 0.25);
+	}
+
+
+	.returnResult {
+		color: #7e7e7e;
+	}
+
+	.calculator-time p {
+		color: #fff;
+	}
+
+	.fa-search {
+		border: none;
+	}
+
+	.time-result {
+		color: white;
+	}
+
+	.dino-game p {
+		color: #fff;
+	}
+
+
+	.task4 .inpA,.task4 .inpB,.task4 .returnResult, .operationsCalc button, .highest-number-inputs input, .time input {
+		box-shadow: 3px 3px 0px 0px rgba(255, 255, 255, 0.25);
+	}
+
+	header {
+		background-color: rgb(17, 17, 17);
+	}
+
+	header .logo {
+		background-image: url(../img/dark-logo.svg);
+	}
+
+	li {
+		color: #D9D9D9;
+	}
+
+	.buttonsScientists .buttonsDivOne button, .buttonsDivTwo button, .scientists button {
+		background-color: #D9D9D9;
+		color: rgb(17, 17, 17);
+		box-shadow: 3px 3px 0px 0px rgba(255, 255, 255, 0.25);
+	}
+
+	.line {
+		background-color: white;
+	}
+
+	section {
+		background-image: url(../img/dark-backround.png);
+	}
+
+	.team-arrowRight {
+		background-image: url(./../img/dark-arrowRight.svg);
+	}
+
+	.team-arrowLeft {
+		background-image: url(./../img/dark-arrowLeft.svg);
+	}
+
+	footer {
+		background-color: rgb(17, 17, 17);
+	}
+
+	.footer-logo {
+		background-image: url(../img/dark-logo.svg);
+	}
+
+	.form-subscribe button {
+		background-color: #D9D9D9;
+		color: #7e7e7e;
+	}
+
+	.actualGame1 .game1Input, .game2Input {
+		box-shadow: 3px 3px 0px 0px rgba(255, 255, 255, 0.25);
+	}
+
+	.rock {
+		background-image: url(../img/icon/dark-rock.svg);
+	}
+
+	.scissors {
+		background-image: url(../img/icon/dark-paper.svg);
+	}
+
+	.paper {
+		background-image: url(../img/icon/dark-scissors.svg);
+	}
+
+	.game3Button {
+		background-color: #d7d7d7;
+		color: black
+	}
+
+	.filter li:hover {
+		background-color: rgba(255, 255, 255, 0.25);
+	}
+
+	.modal-subscribe > .title{
+		color:black
+	}
+
+}

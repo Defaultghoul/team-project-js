@@ -1,0 +1,96 @@
+.game3 {
+	height: 228px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 536px;
+}
+
+.game3Title {
+	margin-bottom: 36px;
+	color: #000;
+	font-family: Montserrat Alternates;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	text-align: center;
+}
+
+.something3 {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.rock,
+.scissors,
+.paper {
+	background-repeat: no-repeat;
+
+	width: 60px;
+	height: 60px;
+}
+
+.rock {
+	background-image: url(../../img/icon/rock.png);
+	margin-left: 140px;
+}
+
+.scissors {
+	background-image: url(../../img/icon/scissors.png);
+}
+
+.paper {
+	background-image: url(../../img/icon/paper.png);
+}
+
+.game3Result {
+	color: #039900;
+	font-family: 'Montserrat Alternates';
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	margin: 36px;
+	text-align: center;
+}
+
+.game3Button {
+	width: auto;
+	height: auto;
+	display: inline-flex;
+	padding: 10px 20px;
+	align-items: flex-start;
+	align-self: center;
+	gap: 10px;
+	border-radius: 20px;
+	background: #000;
+	/* text */
+	color: #fff;
+	font-family: 'Montserrat Alternates';
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	border: none;
+}
+
+.compChoiceText {
+	margin-top: 8px;
+	margin-left: 170px;
+	color: #000;
+	font-family: 'Montserrat Alternates';
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	/* display: none; <- Crashes Chrome on hover */
+	-webkit-appearance: none;
+	margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}

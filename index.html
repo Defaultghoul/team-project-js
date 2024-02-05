@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/style.css" />
+	<link rel="stylesheet" href="./css/black-theme.css">
+</head>
+
+<body>
+	<header class="white" id="themeMode">
+		<div class="logo"></div>
+		<nav>
+			<ul class="nav-ul">
+				<li class="filter-holder">
+					<p onclick="showFilter(); headCounter++;">Інтерактив</p>
+
+					<ul class="filter">
+						<li onclick="numberFilter()">Числовий</li>
+						<li onclick="gameFilter()">Ігровий</li>
+						<li onclick="helloFilter()">Ознайомчивий</li>
+					</ul>
+				</li>
+				<li>Наша команда</li>
+				<li>Контакти</li>
+			</ul>
+		</nav>
+
+		<div class="theme">
+			<label class="switch">
+				<input type="checkbox" id="btnSwitch" />
+				<span class="slider round" onclick="themeCounter+=1, switchTheme()"></span>
+			</label>
+			<p>Вітаємо, <span>User</span></p>
+		</div>
+	</header>
+
+	<section>
+
+		<main class="container white" id="themeMode">
+
+			<h1 class="web-title">Популярні інетрактивні ігри</h1>
+
+			<span class="line"></span>
+
+			<!-- Taras -->
+			<!-- leap year -->
+			<div class="game1">
+				<h1 class="game1Title">Перевір в який рік ти народився</h1>
+				<div class="actualGame1">
+					<input type="number" placeholder="Введіть число" class="game1Input">
+					<img class="game1Button" src="img/icon/icon-search.png" alt="Submit">
+					<h4 class="game1Result"></h4>
+				</div>
+			</div>
+
+			<span class="line"></span>
+
+			<!-- Taras -->
+			<!-- random number -->
+			<div class="game2">
+				<h1 class="game2Title">Вгадай число, яке загадав комп’ютер</h1>
+				<div class="actualGame2">
+					<input type="number" placeholder="Введіть число" class="game2Input">
+					<img class="game2Button" src="img/icon/icon-search.png" alt="Submit">
+					<h4 class="game2Result"></h4>
+				</div>
+			</div>
+
+			<span class="line"></span>
+
+
+			<!-- Taras -->
+			<!-- stone-scissors-paper -->
+			<div class="game3">
+				<h1 class="game3Title">Камінь - ножиці - папір</h1>
+				<div class="something3">
+					<span class="rock"></span>
+					<span class="scissors"></span>
+					<span class="paper"></span>
+
+					<div class="text3">
+						<h3>Рахунок:</h3>
+						<h3 class="game3CompCount">Комп'ютер - 0</h3>
+						<h3 class="game3UserCount">Ви - 0</h3>
+					</div>
+				</div>
+				<h3 class="game3Result">Ви виграли раунд!</h3>
+				<button class="game3Button">Варіант комп’ютера</button>
+				<h3 class="compChoiceText">Варіант комп'ютера:</h3>
+			</div>
+
+			<span class="line"></span>
+
+			<!-- Anton -->
+			<!-- calculator -->
+			<div class="calculator">
+				<p class="tex">Калькулятор</p>
+				<div class="task4">
+					<input type="text" class="inpA" placeholder="Введіть число">
+					<div class="operationsCalc">
+						<button onclick="checkOperation('+')">+</button>
+						<button onclick="checkOperation('-')">-</button>
+						<button onclick="checkOperation('*')">*</button>
+						<button onclick="checkOperation('/')">/</button>
+					</div>
+					<input type="text" class="inpB" placeholder="Введіть число">
+					<button class="resultCalc">=</button>
+					<h1 class="returnResult">Результат</h1>
+				</div>
+			</div>
+
+			<span class="line"></span>
+
+			<!-- Anton -->
+			<!-- time calculator -->
+			<div class="calculator-time">
+				<p>Калькулятор часу</p>
+				<div class="task-5">
+					<div class="time">
+						<input type="number" placeholder="Введіть число" class="calculator-time-input">
+						<button class="fa-search" onclick="calculateTime()"></button>
+						<svg xmlns="http://www.w3.org/2000/svg" width="100" height="2" viewBox="0 0 100 2" fill="none">
+							<path d="M0 1H100" stroke="black" stroke-dasharray="2 2" />
+						</svg>
+						<h2 class="time-result">0 дн. 00:00:00</h1>
+					</div>
+				</div>
+			</div>
+
+			<span class="line"></span>
+
+			<!-- Anton -->
+			<!-- dino -->
+			<div class="dino-game">
+				<p>Google динозавр</p>
+				<div class="game">
+					<div class="ground"></div>
+					<div class="dino"></div>
+				</div>
+				<button class="start">Почати</button>
+			</div>
+
+			<span class="line"></span>
+
+			<!-- Svyatoslav -->
+			<!-- Football -->
+
+			<div class="football">
+				<h3>Футбол</h3>
+
+				<div class="football-main">
+					<span class="football-ball"></span>
+				</div>
+			</div>
+
+
+
+
+			<span class="line"></span>
+
+			<!-- Svyatoslav -->
+			<!-- highest-number -->
+			<div class="highest-number">
+				<h3>Введіть 3 числа</h3>
+
+				<div class="highest-number-inputs">
+					<input type="number" class="first-input" placeholder="Введіть число">
+					<input type="number" class="second-input" placeholder="Введіть число">
+					<input type="number" class="last-input" placeholder="Введіть число" onchange="Count()">
+				</div>
+
+				<h4></h4>
+			</div>
+
+			<span class="line"></span>
+
+			<!-- Svyatoslav -->
+			<!-- team -->
+			<div class="team">
+				<h3 class="team-title">Наша команда</h3>
+
+				<div class="team-main">
+					<!-- <img src="./img/arrowLeft.svg" alt="" class="team-arrowLeft" onclick="subtrackSlide()"> -->
+					<div class="team-arrowLeft" onclick="subtrackSlide()"></div>
+
+					<div class="team-list">
+						<div class="team-list-main">
+							<div class="Svyatoslav">
+								<img src="./img/team/Svyatoslav.jpg" alt="" class="Svyatoslav-img">
+
+								<h4 class="Svyatoslav-name">Святослав</h4>
+
+								<h4 class="Svyatoslav-info">Зробив фільтр інтерактивів, чорну тему, обєднав проект, 7, 8, 9 завдання.
+								</h4>
+							</div>
+
+							<div class="Anton">
+								<img src="./img/logo.svg" alt="" class="Anton-img">
+
+								<h4 class="Anton-name">Антон</h4>
+
+								<h4 class="Anton-info">Виконав 4, 5, 6, 10 завдання.</h4>
+							</div>
+
+							<div class="Taras">
+								<img src="./img/team/Taras.jpg" alt="" class="Taras-img">
+
+								<h4 class="Taras-name">Тарас</h4>
+
+								<h4 class="Taras-info">Виконав 1, 2, 3 завдання.</h4>
+							</div>
+						</div>
+
+					</div>
+
+
+					<!-- <img src="./img/arrowRight.svg" alt="" class="team-arrowRight" onclick="plusSlide()"> -->
+					<div class="team-arrowRight" onclick="plusSlide()"></div>
+					<!-- <span class="team-arrowRight"></span> -->
+				</div>
+
+				<div class="dot-holder">
+					<span class="dot"></span>
+					<span class=" dot"></span>
+					<span class="dot"></span>
+				</div>
+			</div>
+
+			<span class="line"></span>
+
+			<!-- Anton -->
+			<!-- Scientists -->
+			<div class="scientists">
+				<p>Обери вченого/их</p>
+				<div class="allScientists">
+				</div>
+				<div class="buttonsScientists">
+					<div class="buttonsDivOne">
+						<button onclick="displayScientists(scientistsIn19thCentury)">Які вчені народилися в 19 ст.</button>
+						<button onclick="displayScientists(sortedScientists)">Відсортувати вчених за алфавітом</button>
+						<button onclick="displayScientists(sortedScientistsYearsOfLife)">Відсортувати вчених за кількістю прожитих
+							років</button>
+						<button onclick="displayScientists(latestBornScientist)">Знайти вченого, який народився найпізніше</button>
+					</div>
+					<div class="buttonsDivTwo">
+						<button onclick="displayScientists(einsteinYearOfBirth)">Знайти рік народження Albert Einshtein</button>
+						<button onclick="displayScientists(scientistsWithCSurname)">Знайти вчених, прізвища яких починаються на на
+							літеру
+							“С” </button>
+						<button onclick="displayScientists(filteredScientistsA)">Видалити всіх вчених, ім’я яких починається на
+							“А”</button>
+						<button onclick="displayScientists([longestLivedScientist, shortestLivedScientist])">Знайти вченого, який
+							прожив
+							найдовше і вченого,
+							<br>який прожив найменше</button>
+					</div>
+					<button onclick="displayScientists(matchingScientists)">Знайти вчених, в яких співпадають перші літери імені і
+						прізвища</button>
+				</div>
+			</div>
+
+		</main>
+	</section>
+
+	<footer>
+		<div class="footer-logo"></div>
+		<p class="footer-info">
+			Тел: +38 (123) 456 78 90 <br />
+			E-Mail: codingmagic@gmail.com <br />
+			Facebook: CodingMagic <br />
+			Twitter: CodingMagic <br />
+			Instagram: CodingMagic <br />
+		</p>
+
+		<div class="form-subscribe">
+			<form class="form" onsubmit="return false;">
+				<input type="email" placeholder="Ваша ел. адреса..." />
+
+				<button type="submit" onclick="showSubscribe()">Підписатись</button>
+			</form>
+			<p class="form-info">
+				*Підписавшись, Ви зможете ортимувати інформаццію про новинки на
+				сайті
+			</p>
+		</div>
+	</footer>
+
+	<div class="modal-start">
+		<div class="modal-window">
+			<p class="modal-title">
+				Привіт! <br />
+				Ви потрапили на сайт інтерактивних ігор та завдань <br />
+				Надіємось, що вам сподобається і ви отримаєте позитивні емоції!
+				<br />
+				Бажаємо Вам гарно провести час!
+			</p>
+
+			<p class="modal-name">Введіть своє ім’я:</p>
+
+			<form class="form-start" onsubmit="return false;">
+				<input type="text" name="nameUser" placeholder="Ваше ім’я..." class="start-input">
+
+				<button type="submit" onclick="saveStart()">Зберегти</button>
+			</form>
+		</div>
+
+		<i class="icon-close" onclick="closeStart()"></i>
+		<i class="icon-bar"></i>
+		<i class="icon-gameBar"></i>
+		<i class="icon-puzzle"></i>
+		<i class="icon-sword"></i>
+	</div>
+
+	<div class="modal-subscribe">
+		<p class="title">Дякую за підписку!</p>
+		<i class="icon-close" onclick="closeSubscribe()"></i>
+		<i class="icon-bar"></i>
+		<i class="icon-gameBar"></i>
+		<i class="icon-puzzle"></i>
+		<i class="icon-sword"></i>
+	</div>
+
+	<!-- js -->
+	<script src="./js/leap-year.js"></script>
+	<script src="./js/random-num.js"></script>
+	<script src="./js/stone-scissors-paper.js"></script>
+	<script src="./js/football.js"></script>
+	<script src="./js/highest-num.js"></script>
+	<script src="./js/slider.js"></script>
+	<script src="./js/calculator.js"></script>
+	<script src="./js/time-calculator.js"></script>
+	<script src="./js/dino.js"></script>
+	<script src="./js/theme-switcher.js"></script>
+	<script src="./js/scientists.js"></script>
+	<script src="./js/modal-windows.js"></script>
+	<script src="./js/filter.js"></script>
+</body>
+
+</html>

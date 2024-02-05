@@ -1,0 +1,147 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.container p {
+	text-align: center;
+	font-family: 'Montserrat Alternates';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+
+	color: #000000;
+}
+
+hr {
+	width: 536px;
+	margin-top: 36px;
+	margin-bottom: 36px;
+}
+
+main .title-main {
+	font-family: 'Montserrat Alternates';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 29px;
+	text-align: center;
+	padding-top: 36px;
+}
+
+.calculator-time-input {
+	width: 170px;
+	height: 35px;
+	padding: 10px 45px 10px 10px;
+	border-radius: 20px;
+	background: #d7d7d7;
+	filter: drop-shadow(3px 3px 0px rgba(0, 0, 0, 0.25));
+}
+
+.fa-search {
+	top: 1px;
+	right: 37px;
+	position: relative;
+	width: 56px;
+	height: 35px;
+	border-radius: 0px 20px 20px 0px;
+	background: url(../img/icon/icon-search.png) no-repeat;
+}
+
+input::placeholder {
+	font-family: 'Montserrat Alternates';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 15px;
+}
+
+.task4,
+.task5 {
+	width: 576px;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 46px;
+}
+
+.task4,
+.task5 p {
+	font-family: 'Montserrat Alternates';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 15px;
+	display: flex;
+	align-items: center;
+}
+
+.task4 .inpA,
+.inpB {
+	width: 150px;
+}
+
+.operationsCalc {
+	width: 62px;
+	height: 60px;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.operationsCalc button {
+	padding: 5px 10px;
+	border-radius: 20px;
+	background: #000;
+	box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+	color: #fff;
+
+	font-family: 'Montserrat Alternates';
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+
+	border: none;
+	width: 25px;
+	height: 25px;
+}
+
+.resultCalc {
+	padding: 5px 10px;
+	border-radius: 20px;
+	background: #000;
+	box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+	color: #fff;
+
+	font-family: 'Montserrat Alternates';
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+
+	border: none;
+}
+
+.task4 input,
+.task4 h1 {
+	padding: 10px 20px;
+	border-radius: 20px;
+	background: #d7d7d7;
+	box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+.operationsCalc button:nth-child(4) {
+	margin-left: 3px;
+	margin-top: 1px;
+}
+
+.sv {
+	margin-top: 48px;
+	margin-bottom: 36px;
+}
+
+
