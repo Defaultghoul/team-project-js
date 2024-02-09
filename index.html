@@ -17,7 +17,7 @@
 		<nav>
 			<ul class="nav-ul">
 				<li class="filter-holder">
-					<p onclick="showFilter(); headCounter++;">Інтерактив</p>
+					<p onclick="showFilter(); headCounter++;">Інтерактив +</p>
 
 					<ul class="filter">
 						<li onclick="numberFilter()">Числовий</li>
@@ -91,7 +91,7 @@
 				</div>
 				<h3 class="game3Result">Ви виграли раунд!</h3>
 				<button class="game3Button">Варіант комп’ютера</button>
-				<h3 class="compChoiceText">Варіант комп'ютера:</h3>
+				<h3 class="compChoiceText"></h3>
 			</div>
 
 			<span class="line"></span>
@@ -169,8 +169,8 @@
 				<h3>Введіть 3 числа</h3>
 
 				<div class="highest-number-inputs">
-					<input type="number" class="first-input" placeholder="Введіть число">
-					<input type="number" class="second-input" placeholder="Введіть число">
+					<input type="number" class="first-input" placeholder="Введіть число" onchange="Count()">
+					<input type="number" class="second-input" placeholder="Введіть число" onchange="Count()">
 					<input type="number" class="last-input" placeholder="Введіть число" onchange="Count()">
 				</div>
 

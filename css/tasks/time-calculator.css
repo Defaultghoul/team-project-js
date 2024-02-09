@@ -1,5 +1,5 @@
 .time {
-	width: 392px;
+	max-width: 450px;
 	height: 35px;
 	display: flex;
 	justify-content: space-between;
@@ -16,10 +16,8 @@
 }
 
 .time svg {
-	margin-left: 33px;
 	margin-right: 33px;
 }
-
 
 .time .fa-search {
 	top: 0px;

@@ -1,5 +1,5 @@
-let ball = document.querySelector('.football-ball')
-let footballMain = document.querySelector('.football-main')
+let ball = document.querySelector('.football-ball');
+let footballMain = document.querySelector('.football-main');
 
 // const kick = () => {
 // 	console.log(event.clientX, event.clientY)
@@ -9,11 +9,11 @@ let footballMain = document.querySelector('.football-main')
 
 // }
 
-footballMain.addEventListener('click', (event) => {
-	let newPositionLeft = event.clientX - footballMain.getBoundingClientRect().left;
+footballMain.addEventListener('click', event => {
+	let newPositionLeft =
+		event.clientX - footballMain.getBoundingClientRect().left;
 	let newPositionTop = event.clientY - footballMain.getBoundingClientRect().top;
-	console.log(newPositionTop, newPositionLeft);
 
-	ball.style.top = newPositionTop - 25 + 'px'
+	ball.style.top = newPositionTop - 25 + 'px';
 	ball.style.left = newPositionLeft - 25 + 'px';
-})
+});
