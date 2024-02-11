@@ -12,15 +12,53 @@
 	flex-direction: row;
 }
 
-.Svyatoslav-img,
+/* .Svyatoslav-img,
 .Anton-img,
 .Taras-img {
 	width: 150px;
 	height: 150px;
 
 	border-radius: 20px;
+} */
+/*  */
+.Anton-img {
+	background-image: url(../../img/team/Anton.jpeg);
+	background-repeat: no-repeat;
+	background-position-y: -80px;
+	background-position-x: -1px;
+	background-size: 150px;
+
+	width: 150px;
+	height: 150px;
+
+	border-radius: 20px;
 }
 
+.Svyatoslav-img {
+	background-image: url(../../img/team/SVyatoslav.jpeg);
+	background-repeat: no-repeat;
+	background-position-y: -12px;
+	background-size: 150px;
+
+	width: 150px;
+	height: 150px;
+
+	border-radius: 20px;
+}
+
+.Taras-img {
+	background-image: url(../../img/team/Taras.jpeg);
+	background-repeat: no-repeat;
+	background-position-y: -40px;
+	background-position-x: -1px;
+	background-size: 150px;
+
+	width: 150px;
+	height: 150px;
+
+	border-radius: 20px;
+}
+/*  */
 .Svyatoslav,
 .Anton,
 .Taras {
